@@ -1,0 +1,309 @@
+
+C:\Users\zing9\AppData\Local\Temp\arduino-sketch-E9FF02F26AAB1FCDD4B73E53A4C8D65E/v1.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	12 c0       	rjmp	.+36     	; 0x26 <__ctors_end>
+   2:	21 c0       	rjmp	.+66     	; 0x46 <__bad_interrupt>
+   4:	20 c0       	rjmp	.+64     	; 0x46 <__bad_interrupt>
+   6:	1f c0       	rjmp	.+62     	; 0x46 <__bad_interrupt>
+   8:	1e c0       	rjmp	.+60     	; 0x46 <__bad_interrupt>
+   a:	1d c0       	rjmp	.+58     	; 0x46 <__bad_interrupt>
+   c:	1c c0       	rjmp	.+56     	; 0x46 <__bad_interrupt>
+   e:	1b c0       	rjmp	.+54     	; 0x46 <__bad_interrupt>
+  10:	1a c0       	rjmp	.+52     	; 0x46 <__bad_interrupt>
+  12:	27 c0       	rjmp	.+78     	; 0x62 <__vector_9>
+  14:	18 c0       	rjmp	.+48     	; 0x46 <__bad_interrupt>
+  16:	17 c0       	rjmp	.+46     	; 0x46 <__bad_interrupt>
+  18:	16 c0       	rjmp	.+44     	; 0x46 <__bad_interrupt>
+  1a:	15 c0       	rjmp	.+42     	; 0x46 <__bad_interrupt>
+  1c:	14 c0       	rjmp	.+40     	; 0x46 <__bad_interrupt>
+  1e:	13 c0       	rjmp	.+38     	; 0x46 <__bad_interrupt>
+  20:	12 c0       	rjmp	.+36     	; 0x46 <__bad_interrupt>
+  22:	11 c0       	rjmp	.+34     	; 0x46 <__bad_interrupt>
+  24:	10 c0       	rjmp	.+32     	; 0x46 <__bad_interrupt>
+
+00000026 <__ctors_end>:
+__trampolines_start():
+  26:	11 24       	eor	r1, r1
+  28:	1f be       	out	0x3f, r1	; 63
+  2a:	cf e5       	ldi	r28, 0x5F	; 95
+  2c:	d4 e0       	ldi	r29, 0x04	; 4
+  2e:	de bf       	out	0x3e, r29	; 62
+  30:	cd bf       	out	0x3d, r28	; 61
+
+00000032 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  32:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  34:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  36:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  38:	01 c0       	rjmp	.+2      	; 0x3c <.do_clear_bss_start>
+
+0000003a <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  3a:	1d 92       	st	X+, r1
+
+0000003c <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  3c:	a9 36       	cpi	r26, 0x69	; 105
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  3e:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  40:	e1 f7       	brne	.-8      	; 0x3a <.do_clear_bss_loop>
+.do_clear_bss_start():
+  42:	05 d0       	rcall	.+10     	; 0x4e <main>
+  44:	71 c0       	rjmp	.+226    	; 0x128 <_exit>
+
+00000046 <__bad_interrupt>:
+__vector_1():
+  46:	dc cf       	rjmp	.-72     	; 0x0 <__vectors>
+
+00000048 <setup>:
+setup():
+D:\data\nhung\controlTriac\Code\v1/v1.ino:4
+void setup() {
+  // put your setup code here, to run once:
+  
+}
+  48:	08 95       	ret
+
+0000004a <loop>:
+loop():
+  4a:	08 95       	ret
+
+0000004c <initVariant>:
+initVariant():
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:28
+int atexit(void (* /*func*/ )()) { return 0; }
+
+// Weak empty variant initialization function.
+// May be redefined by variant files.
+void initVariant() __attribute__((weak));
+void initVariant() { }
+  4c:	08 95       	ret
+
+0000004e <main>:
+main():
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:35
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+  init();
+  4e:	53 d0       	rcall	.+166    	; 0xf6 <init>
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:37
+
+  initVariant();
+  50:	fd df       	rcall	.-6      	; 0x4c <initVariant>
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:43
+
+#if defined(USBCON)
+  USBDevice.attach();
+#endif
+  
+  setup();
+  52:	fa df       	rcall	.-12     	; 0x48 <setup>
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:47
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+  54:	c0 e0       	ldi	r28, 0x00	; 0
+  56:	d0 e0       	ldi	r29, 0x00	; 0
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:46
+#endif
+  
+  setup();
+    
+  for (;;) {
+    loop();
+  58:	f8 df       	rcall	.-16     	; 0x4a <loop>
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:47
+    if (serialEventRun) serialEventRun();
+  5a:	20 97       	sbiw	r28, 0x00	; 0
+  5c:	e9 f3       	breq	.-6      	; 0x58 <main+0xa>
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/main.cpp:47 (discriminator 1)
+  5e:	d0 df       	rcall	.-96     	; 0x0 <__vectors>
+  60:	fb cf       	rjmp	.-10     	; 0x58 <main+0xa>
+
+00000062 <__vector_9>:
+__vector_9():
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:939
+    "   brne 1b"                     // 2 cycles
+    : /* no outputs */
+    : "w" (us)
+  );
+  // return = 4 cycles
+}
+  62:	1f 92       	push	r1
+  64:	0f 92       	push	r0
+  66:	0f b6       	in	r0, 0x3f	; 63
+  68:	0f 92       	push	r0
+  6a:	11 24       	eor	r1, r1
+  6c:	2f 93       	push	r18
+  6e:	3f 93       	push	r19
+  70:	8f 93       	push	r24
+  72:	9f 93       	push	r25
+  74:	af 93       	push	r26
+  76:	bf 93       	push	r27
+  78:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <timer0_millis>
+  7c:	90 91 66 00 	lds	r25, 0x0066	; 0x800066 <timer0_millis+0x1>
+  80:	a0 91 67 00 	lds	r26, 0x0067	; 0x800067 <timer0_millis+0x2>
+  84:	b0 91 68 00 	lds	r27, 0x0068	; 0x800068 <timer0_millis+0x3>
+  88:	30 91 64 00 	lds	r19, 0x0064	; 0x800064 <timer0_fract>
+  8c:	23 e0       	ldi	r18, 0x03	; 3
+  8e:	23 0f       	add	r18, r19
+  90:	2d 37       	cpi	r18, 0x7D	; 125
+  92:	68 f1       	brcs	.+90     	; 0xee <__vector_9+0x8c>
+  94:	26 e8       	ldi	r18, 0x86	; 134
+  96:	23 0f       	add	r18, r19
+  98:	02 96       	adiw	r24, 0x02	; 2
+  9a:	a1 1d       	adc	r26, r1
+  9c:	b1 1d       	adc	r27, r1
+  9e:	20 93 64 00 	sts	0x0064, r18	; 0x800064 <timer0_fract>
+  a2:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <timer0_millis>
+  a6:	90 93 66 00 	sts	0x0066, r25	; 0x800066 <timer0_millis+0x1>
+  aa:	a0 93 67 00 	sts	0x0067, r26	; 0x800067 <timer0_millis+0x2>
+  ae:	b0 93 68 00 	sts	0x0068, r27	; 0x800068 <timer0_millis+0x3>
+  b2:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+  b6:	90 91 61 00 	lds	r25, 0x0061	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+  ba:	a0 91 62 00 	lds	r26, 0x0062	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+  be:	b0 91 63 00 	lds	r27, 0x0063	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+  c2:	01 96       	adiw	r24, 0x01	; 1
+  c4:	a1 1d       	adc	r26, r1
+  c6:	b1 1d       	adc	r27, r1
+  c8:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+  cc:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+  d0:	a0 93 62 00 	sts	0x0062, r26	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+  d4:	b0 93 63 00 	sts	0x0063, r27	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+  d8:	bf 91       	pop	r27
+  da:	af 91       	pop	r26
+  dc:	9f 91       	pop	r25
+  de:	8f 91       	pop	r24
+  e0:	3f 91       	pop	r19
+  e2:	2f 91       	pop	r18
+  e4:	0f 90       	pop	r0
+  e6:	0f be       	out	0x3f, r0	; 63
+  e8:	0f 90       	pop	r0
+  ea:	1f 90       	pop	r1
+  ec:	18 95       	reti
+  ee:	01 96       	adiw	r24, 0x01	; 1
+  f0:	a1 1d       	adc	r26, r1
+  f2:	b1 1d       	adc	r27, r1
+  f4:	d4 cf       	rjmp	.-88     	; 0x9e <__vector_9+0x3c>
+
+000000f6 <init>:
+init():
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+  f6:	78 94       	sei
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:966
+#if defined(__AVR_ATmega64__) || defined(__AVR_ATmega128__)
+  // CPU specific: different values for the ATmega64/128
+  TCCR0 |= _BV(WGM01) | _BV(WGM00) | _BV(CS02);
+#elif defined(TCCR0) && defined(CS01) && defined(CS00)
+  // This combination is for the ATmega8535, ATmega8, ATmega16, ATmega32, ATmega8515, ATmega162
+  TCCR0 |= _BV(CS01) | _BV(CS00);
+  f8:	83 b7       	in	r24, 0x33	; 51
+  fa:	83 60       	ori	r24, 0x03	; 3
+  fc:	83 bf       	out	0x33, r24	; 51
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:982
+  #error Timer 0 prescale factor 64 not set correctly
+#endif
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+  fe:	89 b7       	in	r24, 0x39	; 57
+ 100:	81 60       	ori	r24, 0x01	; 1
+ 102:	89 bf       	out	0x39, r24	; 57
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 104:	82 e0       	ldi	r24, 0x02	; 2
+ 106:	8e bd       	out	0x2e, r24	; 46
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 108:	8e b5       	in	r24, 0x2e	; 46
+ 10a:	81 60       	ori	r24, 0x01	; 1
+ 10c:	8e bd       	out	0x2e, r24	; 46
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 10e:	8f b5       	in	r24, 0x2f	; 47
+ 110:	81 60       	ori	r24, 0x01	; 1
+ 112:	8f bd       	out	0x2f, r24	; 47
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1011
+#endif
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+ 114:	85 b5       	in	r24, 0x25	; 37
+ 116:	84 60       	ori	r24, 0x04	; 4
+ 118:	85 bd       	out	0x25, r24	; 37
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1020
+  TCCR2A |= _BV(CS22);
+#endif
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+ 11a:	85 b5       	in	r24, 0x25	; 37
+ 11c:	80 64       	ori	r24, 0x40	; 64
+ 11e:	85 bd       	out	0x25, r24	; 37
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1050
+#endif
+
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 120:	87 e8       	ldi	r24, 0x87	; 135
+ 122:	86 b9       	out	0x06, r24	; 6
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1068
+
+  // The bootloader connects pins 0 and 1 to the USART; disconnect them
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+ 124:	1a b8       	out	0x0a, r1	; 10
+C:\Users\zing9\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\2.1.3\cores\MCUdude_corefiles/wiring.c:1072
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+#endif
+}
+ 126:	08 95       	ret
+
+00000128 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 128:	f8 94       	cli
+
+0000012a <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 12a:	ff cf       	rjmp	.-2      	; 0x12a <__stop_program>
